@@ -1,0 +1,451 @@
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css' ;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap') ;
+
+html {
+  height: 100vh;
+  left: 0;
+  margin: auto;
+  overflow-y: auto;
+  top: 0;
+  width: 100vw;
+  background-color: rgb(36, 36, 36);
+}
+
+#root {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.header {
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: gainsboro;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+* {
+  font-family: Montserrat , sans-serif;
+}
+
+header {
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.cent {
+  height: 100vh;
+  margin: auto;
+  width: 100%;
+}
+
+.headerTop {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 240px;
+  box-shadow: 0 3px 3px rgb(0, 0, 0, 0.5);
+  row-gap: 5px;
+  flex-grow: 0;
+}
+
+.navbarTop {
+  background-color: rgb(42, 42, 42);
+  box-shadow: 0 3px 3px rgb(0, 0, 0, 0.5);
+  display: flex;
+  flex-flow: column wrap;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+.user {
+  background-color: white;
+  border-radius: 50px;
+  color: black;
+  display: flex;
+  gap: 20px;
+  padding: 7px 10px;
+  width: 180px;
+  height: 40px;
+}
+
+.user-photo {
+  background-color: lightgray;
+  border-radius: 100%;
+  justify-self: flex-start;
+  object-fit: contain;
+  width: 25px;
+}
+
+.user-name {
+  align-self: center;
+  justify-self: center;
+}
+
+.link a {
+  color: white;
+}
+
+.link {
+  padding-top: 20px;
+  padding-left: 40px;
+  color: white;
+  text-align: justify;
+  transition: 0.1s;
+}
+
+.link:hover {
+  font-size: 17px;
+  transition: 0.2s;
+}
+
+.linkActive, .linkActive a {
+  color: rgb(100, 100, 100);
+  text-decoration: underline 1px;
+}
+
+.disabledLink {
+  padding-top: 20px;
+  padding-left: 40px;
+  color: rgb(100, 100, 100);
+  text-align: justify;
+}
+
+.loginComp {
+  align-content: center;
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex: 1;
+  flex-flow: column wrap;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+  padding-bottom: 125px;
+}
+
+.loginComp h3 {
+  color: white;
+  font-size: 36px;
+}
+
+.input {
+  text-align: center;
+}
+
+.loading {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+  justify-content: center;
+}
+
+.searchComp {
+  align-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  justify-content: flex-start;
+  align-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  margin-left: 240px;
+}
+
+.searchBar {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+  justify-content: center;
+
+}
+
+.result-div {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.resulttitle {
+  color: white;
+}
+
+.result-cards {
+  column-gap: 60px;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  justify-content: center;
+  row-gap: 20px;
+  width: 100%;
+}
+
+.cardAlbum {
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  width: 200px;
+  background-color: white;
+}
+
+.cardImage {
+  border-radius: 8px 8px 0 0;
+  width: 200px;
+}
+
+.cardContent {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  font-size: 12px;
+  padding: 0 15px;
+  padding-bottom: 8px;
+  text-align: justify;
+}
+
+.cardContent span {
+ color: rgb(42, 42, 42);
+}
+
+.linkAlbum a {
+  color: rgb(42, 150, 101);
+}
+
+.albumComp {
+  align-content: center;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+  justify-content: center;
+  column-gap: 50px;
+  margin: auto;
+  margin-top: 20px;
+  width: 100%;
+  color: white;
+}
+
+.albumData {
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+  display: flex;
+  flex-flow: column nowrap;
+  flex-shrink: 0;
+  height: fit-content;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  row-gap: 20px;
+  width: 200px;
+  background-color: white;
+  color: rgb(42, 42, 42)
+}
+
+.albumContentMusic {
+  padding: 0 8px;
+  text-align: center;
+}
+
+.albumContentMusic h5 {
+  font-weight: 400;
+}
+
+.albumContentMusic h6 {
+  font-size: 13px;
+  font-style: italic;
+}
+
+.result-cards-music {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  min-width: 450px;
+  row-gap: 5px;
+}
+
+.cardMusicContent {
+  display: flex;
+  flex-flow: column;
+  font-size: 12px;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.cardAlbumMusic {
+  align-items: center;
+  border-bottom: 1px solid rgb(150, 150, 150, 0.1);
+  border-radius: 5px;
+  border-top: 1px solid rgb(150, 150, 150, 0.1);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.artistName {
+  display: flex;
+  width: fit-content;
+}
+
+.audio {
+  width: 200px;
+}
+
+.audiodiv {
+  display: flex;
+  padding-right: 20px;
+}
+
+.audiocomp {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.favorite-heart {
+  display: flex;
+  padding-left: 8px;
+}
+
+.favPage {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: auto;
+  padding-top: 20px;
+  width: 500px;
+}
+
+.favTitle {
+  align-self: flex-start;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.favSongs {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 5px;
+  width: 450px;
+  color: white;
+}
+
+.songName {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.profilePage {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  justify-content: flex-start;
+  margin: auto;
+  margin-top: 40px;
+  width: 100%
+}
+
+.profileCard {
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-bottom: 150px;
+  padding: 10px;
+  width: 300px;
+  background-color: white;
+}
+
+.profileTop {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+}
+
+.user-avatar {
+  background-color: lightgray;
+  border-radius: 100%;
+  margin-left: 10px;
+  width: 100px;
+}
+
+.user-edit-button {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.profile-content {
+  margin-top: 10px;
+}
+
+.profile-name, .profile-email, .profile-desc {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.profileEditCard {
+  border-left: 1px solid rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border-right: 1px solid rgb(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 250px;
+  background-color: white;
+}
+
+.user-avatar-edit {
+  background-color: lightgray;
+  border-radius: 100%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 100px;
+}
+
+.save-button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.textareaE {
+  text-align: center;
+}

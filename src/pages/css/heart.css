@@ -1,0 +1,7 @@
+.heartInput {
+  display: none;
+}
+
+.theHeart:hover {
+  color: rgb(42, 150, 101);
+}
